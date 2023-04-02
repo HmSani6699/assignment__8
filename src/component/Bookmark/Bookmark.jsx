@@ -2,6 +2,7 @@ import React from "react";
 import "./Bookmark,.css";
 
 const Bookmark = (props) => {
+  
   const title = props.cartTitle;
 
   return (
