@@ -19,6 +19,7 @@ const Blogs = () => {
   const markAsRead = (time) => {
     setBlogTime(blogTime + parseInt(time));
   };
+
   //bookMark cart title list
   const [cartTitles, setCartTitle] = useState([]);
   const bookMark = (name) => {
@@ -37,6 +38,7 @@ const Blogs = () => {
       return;
     }
     const newCartTitle = [...cartTitles, name];
+
     setCartTitle(newCartTitle);
   };
 
@@ -51,8 +53,11 @@ const Blogs = () => {
             bookMark={bookMark}
           ></Blog>
         ))}
+
         <Question></Question>
+
       </div>
+      
       <div className="cart">
         <Cart blogTime={blogTime} cartTitle={cartTitles}></Cart>
       </div>
