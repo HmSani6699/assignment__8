@@ -6,7 +6,6 @@ import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 const Blog = (props) => {
   const { album, authorImg, authorName, name, publishDate, time } = props.blog;
   const markAsRead = props.markAsRead;
-
   const bookMark = props.bookMark;
 
   return (
