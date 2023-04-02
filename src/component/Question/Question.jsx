@@ -4,7 +4,7 @@ import "./Question.css";
 const Question = () => {
   return (
     <div className="question-answer">
-      <h2>Question and Answer</h2>
+      <h2>Question & Answer</h2>
       <h3>1.Props vs state</h3>
       <ul>
         <li>
